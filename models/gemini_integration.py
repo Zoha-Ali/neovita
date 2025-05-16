@@ -1,9 +1,17 @@
 from google.cloud import vision
+from google.oauth2 import service_account
 import io
+import streamlit as st
 
 def analyze_image(image) -> str:
     """Analyze the image with Google Cloud Vision API and return labels."""
-    client = vision.ImageAnnotatorClient()
+
+    # Load credentials from Streamlit secrets
+    credentials_dict = st.secrets["google_cloud"]
+    credentials = service_account.Credentials.from_service_account_info(credentials_dict)
+
+    # Use credentials in the Vision client
+    client = vision.ImageAnnotatorClient(credentials=credentials)
 
     # Convert PIL image to bytes
     img_byte_arr = io.BytesIO()
