@@ -1,3 +1,13 @@
+---
+title: Neovita - Infant Health Checker
+emoji: 👶
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: "1.24.1"
+app_file: app.py
+pinned: false
+---
 
 # 👶 Neovita: Early Illness Detection for Infants
 
