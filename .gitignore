@@ -5,5 +5,26 @@ __pycache__/
 # Ignore your virtual environment folder
 venv/
 
-# Ignore your service account key file for security
+# Ignore service account key file
 neovita_service_account_key.json
+
+# Ignore Streamlit secrets file
+.streamlit/secrets.toml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment config files
+.env
+*.env
+
+# Ignore logs
+*.log
+
+# Ignore compiled files
+*.so
+*.pyd
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
