@@ -2,7 +2,7 @@ import os
 import google.generativeai as genai
 
 # Set your API key here or make sure GOOGLE_API_KEY env variable is set
-genai.configure(api_key=os.getenv("SyBWDVZ9_IjPrWsR3DUNl617BUM2Canv99o"))
+genai.configure(api_key=os.getenv(""))
 
 models = genai.list_models()
 print("Available models and their supported generation methods:")
